@@ -6,9 +6,11 @@ class CropController extends ChangeNotifier {
   CropController({
     double aspectRatio = 1.0,
     double scale = 1.0,
+    Offset offset = Offset.zero
   }) {
     _aspectRatio = aspectRatio;
     _scale = scale;
+    _offset = offset;
   }
   double _aspectRatio = 1;
   double _scale = 1;
